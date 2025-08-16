@@ -1,11 +1,9 @@
-![](https://github.com/Nocturnal414/AE-AtomicEngineering/blob/master/src/main/resources/AE.png)
-
+<p align="center"><img src="https://github.com/Nocturnal414/AE-AtomicEngineering/blob/master/src/main/resources/AE.png?raw=true"></p>
 <hr>
 <p align="center">
-Atomic Engineering<br/> 
-is an addon to Immersive Engineering<br/>
+An addon to Immersive Engineering<br/>
 in development for Minecraft 1.20.1<br/>
-
+<hr>
 <p align="center">
 This Is still in very early **BETA** and I, my self is the 
 only one working on it so progress would be slow as im also preparing for collage. 
