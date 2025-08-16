@@ -7,7 +7,7 @@ is an addon to Immersive Engineering<br/>
 in development for Minecraft 1.20.1<br/>
 
 <p align="center">
-This Is still in very early **BETA** and I, my self is the 
+This is still in very early **BETA** and I, my self is the 
 only one working on it so progress would be slow as im also preparing for collage. 
 Also, im very, very inexperienced so this is also a huge learning curve for me.
 
