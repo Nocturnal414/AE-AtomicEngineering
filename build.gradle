@@ -1,0 +1,115 @@
+plugins {
+    id 'eclipse'
+    id 'idea'
+    id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+    id 'org.spongepowered.mixin'         version '0.7-SNAPSHOT'
+}
+//
+//The version build system was copied from Immersive Geology because i personally find it was cool.
+//
+// Load version properties
+def versionProps = new Properties()
+file('version.properties').withInputStream { versionProps.load(it) }
+
+version = versionProps.getProperty('version')
+ext.version_buildnumber = versionProps.getProperty('build_number')?.toInteger() ?: 0
+
+println "-> build.gradle applying version: $version (build ${version_buildnumber})"
+
+gradle.taskGraph.whenReady { graph ->
+    if (graph.hasTask(':build')) {
+        // Increment build number when running a full build
+        ext.version_buildnumber = ext.version_buildnumber + 1
+        versionProps.setProperty('build_number', ext.version_buildnumber.toString())
+        versionProps.store(file('version.properties').newWriter(), null)
+    }
+}
+
+group = 'com.nocturnal414.atomicengineering'
+archivesBaseName = 'AtomicEngineering'
+
+// Resource replacements
+ext {
+    versionReplacements = [
+            version          : project.version,
+            build_number     : version_buildnumber,
+            forge_version    : "$version_forge",
+            mc_version       : "$version_minecraft",
+            version_ie       : "$version_ie",
+            mod_license      : "$mod_license",
+            mod_name         : "$mod_name",
+            mod_description  : "$mod_description",
+            mod_authors      : "$mod_authors",
+
+    ]
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+minecraft {
+    mappings channel: 'parchment', version: '1.19.3-2023.06.25-1.20.1'
+    copyIdeResources = true
+    runs {
+        client {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            mods { atomicengineering { source sourceSets.main } }
+        }
+        server {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            mods { atomicengineering { source sourceSets.main } }
+        }
+    }
+}
+
+repositories {
+    // Forge/Minecraft mappings
+    maven { url = 'https://maven.minecraftforge.net' }
+
+    // Parchment mappings
+    maven { url = 'https://maven.parchmentmc.org' }
+
+    // CurseMaven for Immersive Engineering
+    maven {
+        url = "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+
+    mavenCentral()
+}
+
+dependencies {
+    // Forge
+    minecraft            "net.minecraftforge:forge:${version_minecraft}-${version_forge}"
+
+    // Immersive Engineering
+    implementation       fg.deobf("curse.maven:immersive-engineering-231951:6206989")
+
+    // JEI
+    implementation       fg.deobf("curse.maven:jei-238222:6600311")
+
+    // Jade
+    implementation       fg.deobf("curse.maven:jade-324717:6855440")
+}
+
+tasks.withType(ProcessResources).configureEach {
+    inputs.properties versionReplacements
+    filesMatching("META-INF/mods.toml") {
+        expand versionReplacements
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}

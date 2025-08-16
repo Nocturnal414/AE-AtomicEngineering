@@ -1,0 +1,48 @@
+modLoader="javafml"
+loaderVersion="[25,)"
+license="${mod_license}"
+
+[[mods]]
+modId="atomicengineering"
+version="${version}+build.${build_number}"
+displayName="Atomic Engineering"
+mod_group_id="net.nocturnal.atomicengineering"
+description='''
+  An Addon that takes power generation onto a whole new age.
+  As of right now this mod adds nothing.
+    [Added]
+        -
+    [Planned content]
+        -More Building and decoration blocks
+        -Radiation effects, Hazmat suits, and decontamination
+        -Uranium Enrichment Process Line
+        -Small Modular Reactors (SMRs)
+        -Light Water Reactor(LWR) Multiblock
+        -Molten Salt Reactors (MSRs) Multiblock
+  '''
+
+authors="Nocturnal414"
+displayURL=""
+logoFile="logo.png"
+credits="Massive inspirations from the Immersive Geology Team"
+
+[[dependencies.atomicengineering]]
+modId="forge"
+mandatory=true
+versionRange="[47.1.54,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.atomicengineering]]
+modId="minecraft"
+mandatory=true
+versionRange="${mc_version}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.atomicengineering]]
+modId="immersiveengineering"
+mandatory=true
+versionRange="[${version_ie},)"
+ordering="NONE"
+side="BOTH"
