@@ -1,0 +1,20 @@
+package net.nocturnal414.atomicengineering.item;
+
+import net.nocturnal414.atomicengineering.AtomicEngineering;
+import net.minecraft.world.item.Item;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+
+public class ModItems {
+    public static final DeferredRegister<Item> ITEMS =
+            DeferredRegister.create(ForgeRegistries.ITEMS, AtomicEngineering.MOD_ID);
+    //test item placeholder for the creative tab icon
+    public static final RegistryObject<Item> ATOMPLACEHOLDER = ITEMS.register("atomplaceholder",
+            () -> new Item(new Item.Properties()));
+
+    public static void register(IEventBus eventBus) {
+        ITEMS.register(eventBus);
+    }
+}

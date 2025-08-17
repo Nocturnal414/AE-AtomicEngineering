@@ -7,7 +7,7 @@ plugins {
     id 'org.spongepowered.mixin'         version '0.7-SNAPSHOT'
 }
 //
-//The version build system was copied from Immersive Geology because i personally find it was cool.
+//The version build system was copied from Immersive Geology because i personally find it cool.
 //
 // Load version properties
 def versionProps = new Properties()
