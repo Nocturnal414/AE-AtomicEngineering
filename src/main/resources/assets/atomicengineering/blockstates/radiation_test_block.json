@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "atomicengineering:block/radiation_test_block"
+    }
+  }
+}

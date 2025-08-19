@@ -13,6 +13,8 @@ public class ModItems {
     //test item placeholder for the creative tab icon
     public static final RegistryObject<Item> ATOMPLACEHOLDER = ITEMS.register("atomplaceholder",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GEIGER_COUNTER = ITEMS.register("geiger_counter",
+            () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

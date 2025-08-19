@@ -25,6 +25,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> HIGH_DENSITY_CONCRETE = registerBlock("high_density_concrete",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.STONE).strength(75F)));
 
+    public static final RegistryObject<Block> RADIATION_TEST_BLOCK = registerBlock("radiation_test_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).sound(SoundType.NETHERITE_BLOCK).strength(100F)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
