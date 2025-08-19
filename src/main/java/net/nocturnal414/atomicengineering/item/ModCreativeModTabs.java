@@ -19,6 +19,8 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.atomic_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.ATOMPLACEHOLDER.get());
+                        pOutput.accept(ModItems.GEIGER_COUNTER.get());
+                        pOutput.accept(ModBlocks.RADIATION_TEST_BLOCK.get());
                         pOutput.accept(ModBlocks.HIGH_DENSITY_CONCRETE.get());
                         pOutput.accept(ModBlocks.LIGHTWEIGHT_RADIATION_SHIELDING_CONCRETE.get());
                     })
