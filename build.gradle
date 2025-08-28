@@ -61,12 +61,14 @@ minecraft {
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
             mods { atomicengineering { source sourceSets.main } }
+            jvmArgs "-Xmx4G", "-Xms2G"
         }
         server {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
             mods { atomicengineering { source sourceSets.main } }
+            jvmArgs "-Xmx4G", "-Xms2G"
         }
     }
 }

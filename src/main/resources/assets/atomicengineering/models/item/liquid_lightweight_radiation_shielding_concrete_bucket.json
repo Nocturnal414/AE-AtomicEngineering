@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "atomicengineering:item/liquid_lightweight_radiation_shielding_concrete_bucket"
+  }
+}

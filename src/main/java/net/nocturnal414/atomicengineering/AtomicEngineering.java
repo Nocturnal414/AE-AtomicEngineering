@@ -1,6 +1,7 @@
 package net.nocturnal414.atomicengineering;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.TickEvent;
@@ -10,9 +11,11 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.nocturnal414.atomicengineering.block.ModBlocks;
-import net.nocturnal414.atomicengineering.item.ModCreativeModTabs;
-import net.nocturnal414.atomicengineering.item.ModItems;
+import net.nocturnal414.atomicengineering.common.block.ModBlocks;
+import net.nocturnal414.atomicengineering.common.fluid.ModFluidTypes;
+import net.nocturnal414.atomicengineering.common.fluid.ModFluids;
+import net.nocturnal414.atomicengineering.common.item.ModCreativeModTabs;
+import net.nocturnal414.atomicengineering.common.item.ModItems;
 import org.slf4j.Logger;
 
 @Mod(AtomicEngineering.MOD_ID)
@@ -27,11 +30,16 @@ public class AtomicEngineering {
         ModCreativeModTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModFluidTypes.register(modEventBus);
+        ModFluids.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::addCreative);
 
         MinecraftForge.EVENT_BUS.register(this);
+    }
+    public static ResourceLocation rl(String path) {
+        return new ResourceLocation(MOD_ID, path);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

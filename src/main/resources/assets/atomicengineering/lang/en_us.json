@@ -2,7 +2,24 @@
   "creativetab.atomic_tab": "Atomic Tab",
   "item.atomicengineering.atomplaceholder": "Atom Placeholder",
   "item.atomicengineering.geiger_counter": "Geiger Counter",
+  "item.atomicengineering.dilute_sulfuric_acid_bucket": "Bucket of Dilute Sulfuric Acid",
+  "item.atomicengineering.liquid_lightweight_radiation_shielding_concrete_bucket": "Bucket Liquid Lightweight Radiation Shielding Concrete",
+
+
+
   "block.atomicengineering.lightweight_radiation_shielding_concrete": "Lightweight Radiation Shielding Concrete",
   "block.atomicengineering.high_density_concrete": "High Density Concrete",
-  "block.atomicengineering.radiation_test_block": "Radiation Test Block"
+  "block.atomicengineering.radiation_test_block": "Radiation Test Block",
+  "block.atomicengineering.dilute_sulfuric_acid": "Dilute Sulfuric Acid",
+  "block.atomicengineering.liquid_lightweight_radiation_shielding_concrete_block": "Liquid Lightweight Radiation Shielding Concrete",
+
+
+
+  "block.atomicengineering.dilute_sulfuric_acid_block": "Dilute Sulfuric Acid",
+  "block.atomicengineering.liquid_lightweight_radiation_shielding_concrete": "Liquid Lightweight Radiation Shielding Concrete",
+
+
+
+  "fluid_type.atomicengineering.dilute_sulfuric_acid": "Dilute Sulfuric Acid",
+  "fluid_type.atomicengineering.liquid_lightweight_radiation_shielding_concrete": "Liquid Lightweight Radiation Shielding Concrete"
 }

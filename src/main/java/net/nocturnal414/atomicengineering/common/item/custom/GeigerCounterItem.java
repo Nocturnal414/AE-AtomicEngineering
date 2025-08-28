@@ -1,4 +1,4 @@
-package net.nocturnal414.atomicengineering.item.custom;
+package net.nocturnal414.atomicengineering.common.item.custom;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;

@@ -1,4 +1,4 @@
-package net.nocturnal414.atomicengineering.item;
+package net.nocturnal414.atomicengineering.common.item;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -8,7 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.nocturnal414.atomicengineering.AtomicEngineering;
-import net.nocturnal414.atomicengineering.block.ModBlocks;
+import net.nocturnal414.atomicengineering.common.block.ModBlocks;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -20,6 +20,7 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.ATOMPLACEHOLDER.get());
                         pOutput.accept(ModItems.GEIGER_COUNTER.get());
+                        pOutput.accept(ModItems.DILUTE_SULFURIC_ACID_BUCKET.get());
                         pOutput.accept(ModBlocks.RADIATION_TEST_BLOCK.get());
                         pOutput.accept(ModBlocks.HIGH_DENSITY_CONCRETE.get());
                         pOutput.accept(ModBlocks.LIGHTWEIGHT_RADIATION_SHIELDING_CONCRETE.get());
