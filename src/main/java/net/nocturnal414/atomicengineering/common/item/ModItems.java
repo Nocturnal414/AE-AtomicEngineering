@@ -2,6 +2,7 @@ package net.nocturnal414.atomicengineering.common.item;
 
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -26,7 +27,9 @@ public class ModItems {
     public static final RegistryObject<Item> DILUTE_SULFURIC_ACID_BUCKET =
             ITEMS.register("dilute_sulfuric_acid_bucket",
                     () -> new BucketItem(ModFluids.SOURCE_DILUTE_SULFURIC_ACID,
-                            new Item.Properties().stacksTo(1)));
+                            new Item.Properties()
+                                    .stacksTo(1)
+                                    .craftRemainder(Items.BUCKET)));
     //e
 
 

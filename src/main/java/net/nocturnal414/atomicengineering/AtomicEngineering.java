@@ -16,6 +16,7 @@ import net.nocturnal414.atomicengineering.common.fluid.ModFluidTypes;
 import net.nocturnal414.atomicengineering.common.fluid.ModFluids;
 import net.nocturnal414.atomicengineering.common.item.ModCreativeModTabs;
 import net.nocturnal414.atomicengineering.common.item.ModItems;
+import net.nocturnal414.atomicengineering.util.ModDispenseBehaviors;
 import org.slf4j.Logger;
 
 @Mod(AtomicEngineering.MOD_ID)
@@ -37,13 +38,16 @@ public class AtomicEngineering {
         modEventBus.addListener(this::addCreative);
 
         MinecraftForge.EVENT_BUS.register(this);
+
     }
     public static ResourceLocation rl(String path) {
         return new ResourceLocation(MOD_ID, path);
     }
 
+
     private void commonSetup(final FMLCommonSetupEvent event) {
         LOGGER.info("Common setup for AtomicEngineering");
+        event.enqueueWork(ModDispenseBehaviors::registerDispenserBehaviors);
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {}
