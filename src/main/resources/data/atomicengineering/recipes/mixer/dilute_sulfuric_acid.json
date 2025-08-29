@@ -1,0 +1,20 @@
+{
+  "type": "immersiveengineering:mixer",
+  "energy": 2400,
+  "fluid": {
+    "amount": 100,
+    "tag": "minecraft:water"
+  },
+  "inputs": [
+    {
+      "base_ingredient": {
+        "item": "immersiveengineering:dust_sulfur"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "amount": 25,
+    "fluid": "atomicengineering:dilute_sulfuric_acid_fluid"
+  }
+}

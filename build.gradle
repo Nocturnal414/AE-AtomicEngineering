@@ -103,6 +103,12 @@ dependencies {
 
     // Jade
     implementation       fg.deobf("curse.maven:jade-324717:6855440")
+
+    // Engineered Schematics
+    implementation       fg.deobf("curse.maven:engineered-schematics-1207780:6293337")
+
+    // Immersive Geology
+    implementation       fg.deobf("curse.maven:immersive-geology-370614:6741678")
 }
 
 tasks.withType(ProcessResources).configureEach {
