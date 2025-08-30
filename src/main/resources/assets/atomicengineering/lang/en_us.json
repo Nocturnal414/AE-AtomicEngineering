@@ -1,25 +1,43 @@
 {
-  "creativetab.atomic_tab": "Atomic Tab",
+  "creativetab.atomic_tab": "Atomic Engineering",
+
+
   "item.atomicengineering.atomplaceholder": "Atom Placeholder",
   "item.atomicengineering.geiger_counter": "Geiger Counter",
-  "item.atomicengineering.dilute_sulfuric_acid_bucket": "Bucket of Dilute Sulfuric Acid",
-  "item.atomicengineering.liquid_lightweight_radiation_shielding_concrete_bucket": "Bucket Liquid Lightweight Radiation Shielding Concrete",
 
+  "item.atomicengineering.dilute_sulfuric_acid_bucket": "Bucket of Dilute Sulfuric Acid",
+  "item.atomicengineering.sulfuric_acid_bucket": "Bucket of Sulfuric Acid",
+  "item.atomicengineering.uranium_slurry_bucket": "Bucket of Uranium Slurry",
+  "item.atomicengineering.pressurized_water_bucket": "Bucket of Pressurized Water",
+  "item.atomicengineering.hot_water_bucket": "Bucket of Hot Water",
+  "item.atomicengineering.superheated_water_bucket": "Bucket of Superheated Water",
+  "item.atomicengineering.steam_bucket": "Bucket of Steam",
+  "item.atomicengineering.low_pressure_steam_bucket": "Bucket of Low Pressure Steam",
+  "item.atomicengineering.high_pressure_steam_bucket": "Bucket of High Pressure Steam",
 
 
   "block.atomicengineering.lightweight_radiation_shielding_concrete": "Lightweight Radiation Shielding Concrete",
   "block.atomicengineering.high_density_concrete": "High Density Concrete",
   "block.atomicengineering.radiation_test_block": "Radiation Test Block",
-  "block.atomicengineering.dilute_sulfuric_acid": "Dilute Sulfuric Acid",
-  "block.atomicengineering.liquid_lightweight_radiation_shielding_concrete_block": "Liquid Lightweight Radiation Shielding Concrete",
-
-
 
   "block.atomicengineering.dilute_sulfuric_acid_block": "Dilute Sulfuric Acid",
-  "block.atomicengineering.liquid_lightweight_radiation_shielding_concrete": "Liquid Lightweight Radiation Shielding Concrete",
-
+  "block.atomicengineering.sulfuric_acid_block": "Sulfuric Acid",
+  "block.atomicengineering.uranium_slurry_block": "Uranium Slurry",
+  "block.atomicengineering.pressurized_water_block": "Pressurized Water",
+  "block.atomicengineering.hot_water_block": "Hot Water",
+  "block.atomicengineering.superheated_water_block": "Superheated Water",
+  "block.atomicengineering.steam_block": "Steam",
+  "block.atomicengineering.low_pressure_steam_block": "Low Pressure Steam",
+  "block.atomicengineering.high_pressure_steam_block": "High Pressure Steam",
 
 
   "fluid_type.atomicengineering.dilute_sulfuric_acid": "Dilute Sulfuric Acid",
-  "fluid_type.atomicengineering.liquid_lightweight_radiation_shielding_concrete": "Liquid Lightweight Radiation Shielding Concrete"
+  "fluid_type.atomicengineering.sulfuric_acid": "Sulfuric Acid",
+  "fluid_type.atomicengineering.uranium_slurry": "Uranium Slurry",
+  "fluid_type.atomicengineering.pressurized_water": "Pressurized Water",
+  "fluid_type.atomicengineering.hot_water": "Hot Water",
+  "fluid_type.atomicengineering.superheated_water": "Superheated Water",
+  "fluid_type.atomicengineering.steam": "Steam",
+  "fluid_type.atomicengineering.low_pressure_steam": "Low Pressure Steam",
+  "fluid_type.atomicengineering.high_pressure_steam": "High Pressure Steam"
 }

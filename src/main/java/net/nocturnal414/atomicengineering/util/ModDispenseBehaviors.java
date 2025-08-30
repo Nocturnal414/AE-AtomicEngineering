@@ -21,10 +21,32 @@ import net.nocturnal414.atomicengineering.common.item.ModItems;
 public class ModDispenseBehaviors {
 
     public static void registerDispenserBehaviors() {
-        // Custom bucket (Dilute Sulfuric Acid)
         DispenserBlock.registerBehavior(ModItems.DILUTE_SULFURIC_ACID_BUCKET.get(), new BucketDispenseBehavior(ModItems.DILUTE_SULFURIC_ACID_BUCKET.get(), Items.BUCKET));
-        // Optional: also register reverse empty bucket behavior for picking up
         DispenserBlock.registerBehavior(Items.BUCKET, new EmptyBucketBehavior(ModBlocks.DILUTE_SULFURIC_ACID_BLOCK.get(), ModItems.DILUTE_SULFURIC_ACID_BUCKET.get()));
+
+        DispenserBlock.registerBehavior(ModItems.SULFURIC_ACID_BUCKET.get(), new BucketDispenseBehavior(ModItems.SULFURIC_ACID_BUCKET.get(), Items.BUCKET));
+        DispenserBlock.registerBehavior(Items.BUCKET, new EmptyBucketBehavior(ModBlocks.SULFURIC_ACID_BLOCK.get(), ModItems.SULFURIC_ACID_BUCKET.get()));
+
+        DispenserBlock.registerBehavior(ModItems.URANIUM_SLURRY_BUCKET.get(), new BucketDispenseBehavior(ModItems.URANIUM_SLURRY_BUCKET.get(), Items.BUCKET));
+        DispenserBlock.registerBehavior(Items.BUCKET, new EmptyBucketBehavior(ModBlocks.URANIUM_SLURRY_BLOCK.get(), ModItems.URANIUM_SLURRY_BUCKET.get()));
+
+        DispenserBlock.registerBehavior(ModItems.PRESSURIZED_WATER_BUCKET.get(), new BucketDispenseBehavior(ModItems.PRESSURIZED_WATER_BUCKET.get(), Items.BUCKET));
+        DispenserBlock.registerBehavior(Items.BUCKET, new EmptyBucketBehavior(ModBlocks.PRESSURIZED_WATER_BLOCK.get(), ModItems.PRESSURIZED_WATER_BUCKET.get()));
+
+        DispenserBlock.registerBehavior(ModItems.HOT_WATER_BUCKET.get(), new BucketDispenseBehavior(ModItems.HOT_WATER_BUCKET.get(), Items.BUCKET));
+        DispenserBlock.registerBehavior(Items.BUCKET, new EmptyBucketBehavior(ModBlocks.HOT_WATER_BLOCK.get(), ModItems.HOT_WATER_BUCKET.get()));
+
+        DispenserBlock.registerBehavior(ModItems.SUPERHEATED_WATER_BUCKET.get(), new BucketDispenseBehavior(ModItems.SUPERHEATED_WATER_BUCKET.get(), Items.BUCKET));
+        DispenserBlock.registerBehavior(Items.BUCKET, new EmptyBucketBehavior(ModBlocks.SUPERHEATED_WATER_BLOCK.get(), ModItems.SUPERHEATED_WATER_BUCKET.get()));
+
+        DispenserBlock.registerBehavior(ModItems.LOW_PRESSURE_STEAM_BUCKET.get(), new BucketDispenseBehavior(ModItems.LOW_PRESSURE_STEAM_BUCKET.get(), Items.BUCKET));
+        DispenserBlock.registerBehavior(Items.BUCKET, new EmptyBucketBehavior(ModBlocks.LOW_PRESSURE_STEAM_BLOCK.get(), ModItems.LOW_PRESSURE_STEAM_BUCKET.get()));
+
+        DispenserBlock.registerBehavior(ModItems.STEAM_BUCKET.get(), new BucketDispenseBehavior(ModItems.STEAM_BUCKET.get(), Items.BUCKET));
+        DispenserBlock.registerBehavior(Items.BUCKET, new EmptyBucketBehavior(ModBlocks.STEAM_BLOCK.get(), ModItems.STEAM_BUCKET.get()));
+
+        DispenserBlock.registerBehavior(ModItems.HIGH_PRESSURE_STEAM_BUCKET.get(), new BucketDispenseBehavior(ModItems.HIGH_PRESSURE_STEAM_BUCKET.get(), Items.BUCKET));
+        DispenserBlock.registerBehavior(Items.BUCKET, new EmptyBucketBehavior(ModBlocks.HIGH_PRESSURE_STEAM_BLOCK.get(), ModItems.HIGH_PRESSURE_STEAM_BUCKET.get()));
 
     }
 

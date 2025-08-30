@@ -1,0 +1,20 @@
+{
+  "type": "immersiveengineering:mixer",
+  "energy": 10200,
+  "fluid": {
+    "amount": 400,
+    "tag": "forge:sulfuricacid"
+  },
+  "inputs": [
+    {
+      "base_ingredient": {
+        "tag": "forge:dusts/uranium"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "amount": 420,
+    "fluid": "atomicengineering:uranium_slurry"
+  }
+}

@@ -18,15 +18,26 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ATOMPLACEHOLDER.get()))
                     .title(Component.translatable("creativetab.atomic_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.ATOMPLACEHOLDER.get());
+                        // Items
                         pOutput.accept(ModItems.GEIGER_COUNTER.get());
+
+                        // Buckets
                         pOutput.accept(ModItems.DILUTE_SULFURIC_ACID_BUCKET.get());
+                        pOutput.accept(ModItems.SULFURIC_ACID_BUCKET.get());
+                        pOutput.accept(ModItems.URANIUM_SLURRY_BUCKET.get());
+                        pOutput.accept(ModItems.PRESSURIZED_WATER_BUCKET.get());
+                        pOutput.accept(ModItems.HOT_WATER_BUCKET.get());
+                        pOutput.accept(ModItems.SUPERHEATED_WATER_BUCKET.get());
+                        pOutput.accept(ModItems.STEAM_BUCKET.get());
+                        pOutput.accept(ModItems.LOW_PRESSURE_STEAM_BUCKET.get());
+                        pOutput.accept(ModItems.HIGH_PRESSURE_STEAM_BUCKET.get());
+
+                        // Blocks
                         pOutput.accept(ModBlocks.RADIATION_TEST_BLOCK.get());
                         pOutput.accept(ModBlocks.HIGH_DENSITY_CONCRETE.get());
                         pOutput.accept(ModBlocks.LIGHTWEIGHT_RADIATION_SHIELDING_CONCRETE.get());
                     })
                     .build());
-
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);

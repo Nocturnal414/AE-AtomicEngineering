@@ -1,8 +1,8 @@
 {
   "type": "immersiveengineering:mixer",
-  "energy": 2400,
+  "energy": 6400,
   "fluid": {
-    "amount": 100,
+    "amount": 200,
     "tag": "minecraft:water"
   },
   "inputs": [
@@ -14,7 +14,7 @@
     }
   ],
   "result": {
-    "amount": 25,
-    "fluid": "atomicengineering:dilute_sulfuric_acid_fluid"
+    "amount": 100,
+    "fluid": "atomicengineering:dilute_sulfuric_acid"
   }
 }

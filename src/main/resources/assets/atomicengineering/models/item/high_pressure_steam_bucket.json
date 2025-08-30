@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "atomicengineering:item/high_pressure_steam_bucket"
+  }
+}

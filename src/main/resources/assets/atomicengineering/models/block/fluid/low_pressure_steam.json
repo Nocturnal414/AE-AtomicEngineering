@@ -1,0 +1,6 @@
+{
+  "parent": "forge:block/fluids",
+  "textures": {
+    "particle": "atomicengineering:block/fluid/default_fluid_still"
+  }
+}
